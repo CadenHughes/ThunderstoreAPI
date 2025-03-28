@@ -1,0 +1,19 @@
+{
+  "name": "thunderstore-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "minimist": "^1.2.8",
+    "pretty-print-json": "^3.0.4",
+    "prettyjson": "^1.2.5",
+    "yaml": "^2.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

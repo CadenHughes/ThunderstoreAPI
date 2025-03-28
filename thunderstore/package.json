@@ -1,0 +1,16 @@
+{
+  "name": "thunderstore",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "devDependencies": {
+    "pretty-print-json": "^3.0.4",
+    "prettyjson": "^1.2.5"
+  }
+}

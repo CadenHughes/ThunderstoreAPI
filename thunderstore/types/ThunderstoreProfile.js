@@ -48,7 +48,7 @@ export default class ThunderstoreProfile {
 
         fs.writeFileSync(filePath, decoded);
         let profileData = ThunderstoreProfile.#readR2Z(filePath);
-        // fs.rmSync(filePath); // cleanup
+        fs.rmSync(filePath); // cleanup
 
         return ThunderstoreProfile.#createThunderstoreProfile(profileData);
     }

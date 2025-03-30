@@ -20,7 +20,6 @@ import * as fs from "fs";
     console.log(currentPackage.totalDownloads);
     console.log(latestVersion.downloadUrl);
 
-    // latestVersion.downloadTo("C:/")
-
-    await Thunderstore.test();
+    let profile = Thunderstore.getProfileFromCode("0195daaa-f9ad-d7da-ead3-98e262cc6083");
+    console.log(profile.profileName);
 })();

@@ -3,11 +3,6 @@ import ThunderstoreAPI from "./ThunderstoreAPI.js";
 import { ThunderstoreCommunity, ThunderstorePackage, ThunderstorePackageVersion, ThunderstoreProfile } from "./types/index.js";
 
 export default class Thunderstore {
-    static async test() {
-        let profile = await ThunderstoreProfile.fromCode("0195daaa-f9ad-d7da-ead3-98e262cc6083");
-        await profile.downloadPackages("C:/test/")
-    }
-
     /**
      * Fetches a list of all thunderstore packages.
      * @returns {Promise<ThunderstorePackage[]>} A promise that resolves to an array of ThunderstorePackage objects.
@@ -70,5 +65,14 @@ export default class Thunderstore {
         } catch (err) {
             throw new Error(`Error retrieving community: ${err.message}`);
         }
+    }
+    
+    /**
+     * Fetches a profile from a code.
+     * @async
+     * @returns {ThunderstoreProfile} A ThunderstoreProfile object.
+     */
+    static async getProfileFromCode(code) {
+        return await ThunderstoreProfile.fromCode(code);
     }
 }
